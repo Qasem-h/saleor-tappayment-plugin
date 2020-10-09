@@ -175,8 +175,6 @@ class TapPayGatewayPlugin(BasePlugin):
         kind = TransactionKind.AUTH
         if result_code in PENDING_STATUSES:
             kind = TransactionKind.PENDING
-        elif adyen_auto_capture:
-            kind = TransactionKind.CAPTURE
 
         if result_code in PENDING_STATUSES:
             pass
