@@ -21,7 +21,7 @@ for install tap payment gateway follow this steps
 Clone the repository:
 
 ```
-git clone https://github.com/Qasem-h/tappayment-python.git
+git clone https://github.com/Qasem-h/saleor-tappayment-plugin.git
 ```
 
 Copy in saleor API root
