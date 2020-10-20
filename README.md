@@ -1,4 +1,4 @@
-## Saleor Tap Payment Gateways Plugin
+# Saleor Tap Payment Gateways Plugin
   [Tap Payment API Docs](https://tappayments.api-docs.io/)
 
 ## Getting Started
@@ -7,35 +7,31 @@ for install tap payment gateway follow this steps
 
 ### Prerequisites
 
-- Saleor >= 2.10
-- Tap Payment Clinet API Python Package  [Github](https://github.com/Qasem-h/tappayment-python)  |  [Pypi](https://pypi.org/project/TapPayment/)
-
-## Installing
-
-#### Install Tap Payment Python Package 
- In saleor root add `TapPayment==0.0.2` into  `requirements.txt`
- and run this command :
+- Saleor =>2.10
+- Tappayment Clinet API Python Package 
+  [Tap Payment Clinet Package Github](https://github.com/Qasem-h/tappayment-python)
+  [Tap Payment Clinet Package Pypi](https://pypi.org/project/)
+  ```  
+   pip install tappayment
   ```
-  python -m pip install -r requirements.txt
-  ```
+   
 
-#### Install Tap Payment Plagin in saleor API
+### Installing
 
 Clone the repository:
+
 ```
-git clone git@github.com:Qasem-h/saleor-tappayment-plugin.git
+git clone https://github.com/Qasem-h/tappayment-python.git
 ```
 
-Copy `saleor` folder in saleor API root
+Copy in saleor API root
 
-Edite saleor API `setting.py` and add this line:
+copy it in saleor root directory
+ 
+Edite saleor API `setting.py`:
 ```python
 PLUGINS = [
      #...
      "saleor.payment.gateways.tappay.plugin.TapPayGatewayPlugin",
  ]
 ```
-
-#### Configuration saleor-storefront
-
- Copy `saleor-storefront` folder saleor-storefront  root
